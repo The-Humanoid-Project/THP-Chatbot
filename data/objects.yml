@@ -1,0 +1,20 @@
+version: "3.1"
+
+nlu:
+
+- lookup: object
+  examples: |
+    - book
+    - cup
+    - box
+    - paper
+    - bundle
+    - notebook
+    - tray
+    - pencil
+    - pen
+    - pouch
+    - laptop
+    - marker
+    - chalk
+    - duster

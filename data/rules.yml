@@ -11,3 +11,28 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Say intent pick
+  steps:
+  - intent: pick
+  - action: action_pick
+
+- rule: Say intent keep
+  steps:
+  - intent: keep
+  - action: action_keep
+
+- rule: greet everytime
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: how is the bot
+  steps:
+  - intent: how_are_you
+  - action: utter_fine
+
+- rule: where is the bot
+  steps:
+  - intent: where_r_u
+  - action: utter_location

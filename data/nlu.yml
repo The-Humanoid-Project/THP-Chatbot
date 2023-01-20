@@ -38,6 +38,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - yeah
+    - yep
 
 - intent: deny
   examples: |
@@ -48,6 +50,8 @@ nlu:
     - don't like that
     - no way
     - not really
+    - nope 
+    - nah
 
 - intent: mood_great
   examples: |
@@ -80,7 +84,6 @@ nlu:
     - not good
     - not very good
     - extremly sad
-    - so saad
     - so sad
 
 - intent: bot_challenge
@@ -89,3 +92,38 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - who are you?
+    - who am I speaking to?
+    - tell me about yourself
+
+- intent: pick
+  examples: |
+    - Get the [box](object)
+    - Pick up the [cup](object)
+    - Can you pick up the [box](object)?
+    - Could you pick up the [laptop](object)?
+    - Please lift the [box](object)
+    - Carry the [box](object)
+    - Grab the [box](object)
+    - Could you carry the [cup](object)
+    - Please hold the [box](object)
+
+- intent: keep
+  examples: |
+    - Keep the [book](object) on the [table](destination)
+    - Drop the [cup](object) on the [desk](destination)
+    - Leave the [laptop](object) on the [bed](destination)
+
+- intent: how_are_you
+  examples: |
+    - how are you?
+    - how are you doing?
+    - what's up?
+    - how is everything going?
+
+- intent: where_r_u
+  examples: |
+    - where are you?
+    - what is this place?
+    - where am I?
+    - which place is this?

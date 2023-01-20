@@ -28,3 +28,21 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: pick object
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: pick
+   - action: action_pick
+   - intent: mood_great
+   - action: utter_happy
+
+- story: keep object
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: keep
+   - action: action_keep
+   - intent: mood_great
+   - action: utter_happy

@@ -8,10 +8,18 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - pick
+  - keep
+  - where_r_u
+  - how_are_you
+
+entities:
+  - object
+  - destination
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey there ! Welcome, ask me something ?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -27,7 +35,17 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a humanoid robot, developed by students of IIT Bombay, powered by Rasa."
+
+  utter_fine:
+  - text: "I am doing well! Thanks so much for being here"
+
+  utter_location:
+  - text: "This is the Tech and RnD Expo of IIT Bombay. It's so cool here"
+
+actions:
+  - action_keep
+  - action_pick
 
 session_config:
   session_expiration_time: 60
