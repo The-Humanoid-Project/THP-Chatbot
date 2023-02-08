@@ -1,4 +1,5 @@
 import cv2
+import os
 
 class imagecapture:
     def initialize(self):
@@ -7,6 +8,8 @@ class imagecapture:
     def click(self):
         self.initialize()
         result, image = self.cam.read()
+        if not os.path.exists('captures'):
+            os.makedirs('captures')
         cv2.imwrite('captures/latestimg.png', image)
         self.closecam()
         return result
