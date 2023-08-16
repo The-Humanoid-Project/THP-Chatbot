@@ -35,13 +35,13 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a humanoid robot, developed by students of IIT Bombay, powered by Rasa."
+  - text: "I am a humanoid robot, developed by students of The Humanoid Project at IIT Bombay, I want to interact with students, and make our campus a more accessible and friendly place. I want to assist in the Library in making sure that books are kept in their correct shelves, so that you can get them with ease."
 
   utter_fine:
-  - text: "I am doing well! Thanks so much for being here"
+  - text: "I am doing well! Thank you for being here"
 
   utter_location:
-  - text: "This is the Tech and RnD Expo of IIT Bombay. It's so cool here"
+  - text: "This is the Tech Team Orientation at IIT Bombay. It's so cool here. I can't wait to meet all the First Year Students"
 
 actions:
   - action_keep
