@@ -33,6 +33,8 @@ This might happen because of a few uninstalled dependencies on your Linux. Run t
 `pip install requirements.txt` to install all Rasa and yolo dependencies \
 `pip install ocr_reqs.txt` to install all OCR and flask dependencies \
 
+`rasa train`, if you're setting up for the first time to create weights for Rasa model
+
 `npm run dev` in frontend directory to start the React app \
 `./humanoid.sh` in root directory to start the Rasa server \
 `python3 ocr_flask.py` to start the flask server for OCR endpoint \
