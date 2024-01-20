@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - pick
+  - where_r_u
+  - how_are_you
+
+entities:
+  - object
+  - destination
+
+responses:
+  utter_greet:
+  - custom: {"message": "Hey there ! Welcome, ask me something ?"}
+
+  utter_cheer_up:
+  - custom: {"message": "Here is something to cheer you up:"}
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - custom: {"message": "Did that help you?"}
+
+  utter_happy:
+  - custom: {"message": "Great, carry on!"}
+
+  utter_goodbye:
+  - custom: {"message": "Bye"}
+
+  utter_iamabot:
+  - custom: {"message": "I am a humanoid robot, developed by students of The Humanoid Project at IIT Bombay, I want to interact with students, and make our campus a more accessible and friendly place. I want to assist in the Library in making sure that books are kept in their correct shelves, so that you can get them with ease."}
+
+  utter_fine:
+  - custom: {"message": "I am doing well! Thank you for being here"}
+
+  utter_location:
+  - custom: {"message": "This is the Tech RnD Expo 2023 at IIT Bombay."}
+
+actions:
+  - action_pick
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

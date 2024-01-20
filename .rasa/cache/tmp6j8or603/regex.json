@@ -1,0 +1,6 @@
+[
+  {
+    "name": "object",
+    "pattern": "(\\bbook\\b|\\bcup\\b|\\bbox\\b|\\bpaper\\b|\\bbundle\\b|\\bnotebook\\b|\\btray\\b|\\bpencil\\b|\\bpen\\b|\\bpouch\\b|\\blaptop\\b|\\bmarker\\b|\\bchalk\\b|\\bduster\\b)"
+  }
+]
