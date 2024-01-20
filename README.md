@@ -26,3 +26,15 @@ Thereafter, install all python packages using the command `pip3 install -r requi
 
 - **PyAudio installation error involving wheel build and portaudio.h** \
 This might happen because of a few uninstalled dependencies on your Linux. Run the following to install all PyAudio dependencies: `$ sudo apt install portaudio19-dev python3-pyaudio`
+
+## How to setup this branch ###########
+
+`npm install` to install all the node modules in the frontend directory \
+`pip install requirements.txt` to install all Rasa and yolo dependencies \
+`pip install ocr_reqs.txt` to install all OCR and flask dependencies \
+
+`npm run dev` in frontend directory to start the React app \
+`./humanoid.sh` in root directory to start the Rasa server \
+`python3 ocr_flask.py` to start the flask server for OCR endpoint \
+
+
