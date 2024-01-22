@@ -4,8 +4,8 @@ from PIL import Image
 
 class LabelDetector():
     def __init__(self):
-        self.BookModel = YOLO('./weights/best2.pt')
-        self.LabelModel = YOLO('./weights/label.pt')
+        self.Model_Frozen = YOLO('./weights/Freeze_Best_Model.pt')
+        self.LabelModel_Fully_Retrained = YOLO('./weights/FullyRetrain_Best_Model.pt')
     
     def getBookCrops(self,image_path):
         crop_paths = []

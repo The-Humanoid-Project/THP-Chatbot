@@ -1,6 +1,5 @@
 venv/
 frontend/node_modules/*
-weights/*
 models/*
 ocr/*
 .rasa/
