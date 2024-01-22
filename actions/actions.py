@@ -1,16 +1,13 @@
 from pathlib import Path
-import random
 from typing import Any, Text, Dict, List
 import time
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from yolov5.detect import objectdetector
 from labelDetector import LabelDetector
 from imagecapturer import imagecapture
 from opac_interface import OPACInterface
 import requests
 import glob, os
-import cv2
 
 class ActionPick(Action):
     def name(self) -> Text:

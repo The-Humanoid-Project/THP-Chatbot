@@ -1,7 +1,6 @@
 from ultralytics import YOLO
 # import matplotlib.pyplot as plt 
 from PIL import Image
-import cv2
 
 class LabelDetector():
     def __init__(self):

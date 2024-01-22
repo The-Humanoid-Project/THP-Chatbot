@@ -9,7 +9,6 @@ import os
 import tkinter as tk
 import time
 from scipy.io.wavfile import write
-import json
 
 # The Audio formats
 FORMAT = pyaudio.paInt16
