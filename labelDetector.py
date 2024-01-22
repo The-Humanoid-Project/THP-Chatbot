@@ -9,7 +9,7 @@ class LabelDetector():
     
     def getBookCrops(self,image_path):
         crop_paths = []
-        result = self.BookModel(image_path)
+        result = self.Model_Frozen.predict(source=image_path, classes = 0, conf = 0.8)
 
         if(len(result) == 0):
             return (0,[])
@@ -36,7 +36,7 @@ class LabelDetector():
     
     def getLabelCrops(self, image, index):
         label_paths = []
-        result = self.LabelModel(image)
+        result = self.Model_Frozen.predict(source=image, classes = 0, conf = 0.9)
 
         if(len(result) == 0):
             return (0,[])
