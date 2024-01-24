@@ -1,6 +1,6 @@
 venv/
 frontend/node_modules/*
-models/*
+models/
 ocr/*
 .rasa/
 __pycache__/
